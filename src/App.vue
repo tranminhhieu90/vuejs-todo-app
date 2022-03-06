@@ -1,18 +1,17 @@
 <template>
   <div id="app">
-    <Header />
-    <Todos />
+    <Navbar />
+    <router-view />
   </div>
 </template>
 
 <script>
-import Header from './components/Header'
-import Todos from './components/Todos'
+import Navbar from "./components/Navbar";
 
 export default {
-  name: 'App',
-  components: { Header, Todos }
-}
+  name: "App",
+  components: { Navbar },
+};
 </script>
 
 <style>
